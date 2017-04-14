@@ -37,17 +37,17 @@ Ctrl + d - move forward 1/2 a screen<br>
 Ctrl + u - move back 1/2 a screen<br>
 > Tip: Prefix a cursor movement command with a number to repeat it. For example, 4j moves down 4 lines.<br>
 
-## Insert mode - inserting/appending text
-i - insert before the cursor
-I - insert at the beginning of the line
-a - insert (append) after the cursor
-A - insert (append) at the end of the line
-o - append (open) a new line below the current line
-O - append (open) a new line above the current line
-ea - insert (append) at the end of the word
-Esc - exit insert mode
+## Insert mode - inserting/appending text<br>
+i - insert before the cursor<br>
+I - insert at the beginning of the line<br>
+a - insert (append) after the cursor<br>
+A - insert (append) at the end of the line<br>
+o - append (open) a new line below the current line<br>
+O - append (open) a new line above the current line<br>
+ea - insert (append) at the end of the word<br>
+Esc - exit insert mode<br>
 
-## Editing
+## Editing<br>
 r - replace a single character
 J - join line below to the current one
 cc - change (replace) entire line
