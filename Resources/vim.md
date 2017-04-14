@@ -48,77 +48,77 @@ ea - insert (append) at the end of the word<br>
 Esc - exit insert mode<br>
 
 ## Editing<br>
-r - replace a single character
-J - join line below to the current one
-cc - change (replace) entire line
-cw - change (replace) to the end of the word
-c$ - change (replace) to the end of the line
-s - delete character and substitute text
-S - delete line and substitute text (same as cc)
-xp - transpose two letters (delete and paste)
-u - undo
-Ctrl + r - redo
-. - repeat last command
+r - replace a single character<br>
+J - join line below to the current one<br>
+cc - change (replace) entire line<br>
+cw - change (replace) to the end of the word<br>
+c$ - change (replace) to the end of the line<br>
+s - delete character and substitute text<br>
+S - delete line and substitute text (same as cc)<br>
+xp - transpose two letters (delete and paste)<br>
+u - undo<br>
+Ctrl + r - redo<br>
+. - repeat last command<br>
 
-## Marking text (visual mode)
-v - start visual mode, mark lines, then do a command (like y-yank)
-V - start linewise visual mode
-o - move to other end of marked area
-Ctrl + v - start visual block mode
-O - move to other corner of block
-aw - mark a word
-ab - a block with ()
-aB - a block with {}
-ib - inner block with ()
-iB - inner block with {}
-Esc - exit visual mode
+## Marking text (visual mode)<br>
+v - start visual mode, mark lines, then do a command (like y-yank)<br>
+V - start linewise visual mode<br>
+o - move to other end of marked area<br>
+Ctrl + v - start visual block mode<br>
+O - move to other corner of block<br>
+aw - mark a word<br>
+ab - a block with ()<br>
+aB - a block with {}<br>
+ib - inner block with ()<br>
+iB - inner block with {}<br>
+Esc - exit visual mode<br>
 
-## Visual commands
-> - shift text right
-< - shift text left
-y - yank (copy) marked text
-d - delete marked text
-~ - switch case
+## Visual commands<br>
+> - shift text right<br>
+< - shift text left<br>
+y - yank (copy) marked text<br>
+d - delete marked text<br>
+~ - switch case<br>
 
-## Registers
-:reg - show registers content
-"xy - yank into register x
-"xp - paste contents of register x
-Tip Registers are being stored in ~/.viminfo, and will be loaded again on next restart of vim.
-Tip Register 0 contains always the value of the last yank command.
-
-## Marks
-:marks - list of marks
+## Registers<br>
+:reg - show registers content<br>
+"xy - yank into register x<br>
+"xp - paste contents of register x<br>
+Tip Registers are being stored in ~/.viminfo, and will be loaded again on next restart of vim.<br>
+Tip Register 0 contains always the value of the last yank command.<br>
+<br>
+## Marks<br>
+:marks - list of marks<br>
 ma - set current position for mark A
-`a - jump to position of mark A
+<br>`a - jump to position of mark A<br>
 y`a - yank text to position of mark A
 
 ## Macros
-qa - record macro a
-q - stop recording macro
-@a - run macro a
-@@ - rerun last run macro
-Cut and paste
-yy - yank (copy) a line
-2yy - yank (copy) 2 lines
-yw - yank (copy) the characters of the word from the cursor position to the start of the next word
-y$ - yank (copy) to end of line
-p - put (paste) the clipboard after cursor
-P - put (paste) before cursor
-dd - delete (cut) a line
-2dd - delete (cut) 2 lines
-dw - delete (cut) the characters of the word from the cursor position to the start of the next word
-D - delete (cut) to the end of the line
-d$ - delete (cut) to the end of the line
-x - delete (cut) character
+qa - record macro a<br>
+q - stop recording macro<br>
+@a - run macro a<br>
+@@ - rerun last run macro<br>
+Cut and paste<br>
+yy - yank (copy) a line<br>
+2yy - yank (copy) 2 lines<br>
+yw - yank (copy) the characters of the word from the cursor position to the start of the next word<br>
+y$ - yank (copy) to end of line<br>
+p - put (paste) the clipboard after cursor<br>
+P - put (paste) before cursor<br>
+dd - delete (cut) a line<br>
+2dd - delete (cut) 2 lines<br>
+dw - delete (cut) the characters of the word from the cursor position to the start of the next word<br>
+D - delete (cut) to the end of the line<br>
+d$ - delete (cut) to the end of the line<br>
+x - delete (cut) character<br>
 
-## Exiting
-:w - write (save) the file, but don't exit
-:w !sudo tee % - write out the current file using sudo
-:wq or :x or ZZ - write (save) and quit
-:q - quit (fails if there are unsaved changes)
-:q! or ZQ - quit and throw away unsaved changes
-Search and replace
+## Exiting<br>
+:w - write (save) the file, but don't exit<br>
+:w !sudo tee % - write out the current file using sudo<br>
+:wq or :x or ZZ - write (save) and quit<br>
+:q - quit (fails if there are unsaved changes)<br>
+:q! or ZQ - quit and throw away unsaved changes<br>
+## Search and replace<br>
 /pattern - search for pattern
 ?pattern - search backward for pattern
 \vpattern - 'very magic' pattern: non-alphanumeric characters are interpreted as special regex symbols (no escaping needed)
