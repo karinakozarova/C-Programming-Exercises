@@ -72,24 +72,28 @@ aB - a block with {}
 ib - inner block with ()
 iB - inner block with {}
 Esc - exit visual mode
+
 ## Visual commands
 > - shift text right
 < - shift text left
 y - yank (copy) marked text
 d - delete marked text
 ~ - switch case
-Registers
+
+## Registers
 :reg - show registers content
 "xy - yank into register x
 "xp - paste contents of register x
 Tip Registers are being stored in ~/.viminfo, and will be loaded again on next restart of vim.
 Tip Register 0 contains always the value of the last yank command.
-Marks
+
+## Marks
 :marks - list of marks
 ma - set current position for mark A
 `a - jump to position of mark A
 y`a - yank text to position of mark A
-Macros
+
+## Macros
 qa - record macro a
 q - stop recording macro
 @a - run macro a
@@ -107,7 +111,8 @@ dw - delete (cut) the characters of the word from the cursor position to the sta
 D - delete (cut) to the end of the line
 d$ - delete (cut) to the end of the line
 x - delete (cut) character
-Exiting
+
+## Exiting
 :w - write (save) the file, but don't exit
 :w !sudo tee % - write out the current file using sudo
 :wq or :x or ZZ - write (save) and quit
@@ -122,13 +127,16 @@ N - repeat search in opposite direction
 :%s/old/new/g - replace all old with new throughout file
 :%s/old/new/gc - replace all old with new throughout file with confirmations
 :noh - remove highlighting of search matches
-Search in multiple files
+
+
+## Search in multiple files
 :vimgrep /pattern/ {file} - search for pattern in multiple files
 e.g. :vimgrep /foo/ **/*
 :cn - jump to the next match
 :cp - jump to the previous match
 :copen - open a window containing the list of matches
-Working with multiple files
+
+## Working with multiple files
 :e file - edit a file in a new buffer
 :bnext or :bn - go to the next buffer
 :bprev or :bp - go to the previous buffer
@@ -144,7 +152,8 @@ Ctrl + wh - move cursor to the left window (vertical split)
 Ctrl + wl - move cursor to the right window (vertical split)
 Ctrl + wj - move cursor to the window below (horizontal split)
 Ctrl + wk - move cursor to the window above (horizontal split)
-Tabs
+
+## Tabs
 :tabnew or :tabnew file - open a file in a new tab
 Ctrl + wT - move the current split window into its own tab
 gt or :tabnext or :tabn - move to the next tab
