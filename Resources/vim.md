@@ -89,9 +89,9 @@ Tip Register 0 contains always the value of the last yank command.<br>
 <br>
 ## Marks<br>
 :marks - list of marks<br>
-ma - set current position for mark A
-<br>`a - jump to position of mark A<br>
-y`a - yank text to position of mark A
+ma - set current position for mark A<br>
+\`a - jump to position of mark A<br>
+\`a - yank text to position of mark A
 
 ## Macros
 qa - record macro a<br>
