@@ -1,41 +1,41 @@
 # Vim Cheat Sheet
 
-:help keyword - open help for keyword
-:o file - open file
-:saveas file - save file as
-:close - close current pane
+:help keyword - open help for keyword <br>
+:o file - open file <br>
+:saveas file - save file as <br>
+:close - close current pane <br>
 
 ## Cursor movement
-h - move cursor left
-j - move cursor down
-k - move cursor up
-l - move cursor right
-H - move to top of screen
-M - move to middle of screen
-L - move to bottom of screen
-w - jump forwards to the start of a word
-W - jump forwards to the start of a word (words can contain punctuation)
-e - jump forwards to the end of a word
-E - jump forwards to the end of a word (words can contain punctuation)
-b - jump backwards to the start of a word
-B - jump backwards to the start of a word (words can contain punctuation)
-0 - jump to the start of the line
-^ - jump to the first non-blank character of the line
-$ - jump to the end of the line
-g_ - jump to the last non-blank character of the line
-gg - go to the first line of the document
-G - go to the last line of the document
-5G - go to line 5
-fx - jump to next occurrence of character x
-tx - jump to before next occurrence of character x
-} - jump to next paragraph (or function/block, when editing code)
-{ - jump to previous paragraph (or function/block, when editing code)
-zz - center cursor on screen
-Ctrl + b - move back one full screen
-Ctrl + f - move forward one full screen
-Ctrl + d - move forward 1/2 a screen
-Ctrl + u - move back 1/2 a screen
-> Tip: Prefix a cursor movement command with a number to repeat it. For example, 4j moves down 4 lines.
+h - move cursor left <br>
+j - move cursor down<br>
+k - move cursor up<br>
+l - move cursor right<br>
+H - move to top of screen<br>
+M - move to middle of screen<br>
+L - move to bottom of screen<br>
+w - jump forwards to the start of a word<br>
+W - jump forwards to the start of a word (words can contain punctuation)<br>
+e - jump forwards to the end of a word<br>
+E - jump forwards to the end of a word (words can contain punctuation)<br>
+b - jump backwards to the start of a word<br>
+B - jump backwards to the start of a word (words can contain punctuation)<br>
+0 - jump to the start of the line<br>
+^ - jump to the first non-blank character of the line <br>
+$ - jump to the end of the line<br>
+g_ - jump to the last non-blank character of the line<br>
+gg - go to the first line of the document<br>
+G - go to the last line of the document<br>
+5G - go to line 5<br>
+fx - jump to next occurrence of character x<br>
+tx - jump to before next occurrence of character x<br>
+} - jump to next paragraph (or function/block, when editing code)<br>
+{ - jump to previous paragraph (or function/block, when editing code)<br>
+zz - center cursor on screen<br>
+Ctrl + b - move back one full screen<br>
+Ctrl + f - move forward one full screen<br>
+Ctrl + d - move forward 1/2 a screen<br>
+Ctrl + u - move back 1/2 a screen<br>
+> Tip: Prefix a cursor movement command with a number to repeat it. For example, 4j moves down 4 lines.<br>
 
 ## Insert mode - inserting/appending text
 i - insert before the cursor
