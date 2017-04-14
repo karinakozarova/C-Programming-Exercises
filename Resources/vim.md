@@ -119,22 +119,22 @@ x - delete (cut) character<br>
 :q - quit (fails if there are unsaved changes)<br>
 :q! or ZQ - quit and throw away unsaved changes<br>
 ## Search and replace<br>
-/pattern - search for pattern
-?pattern - search backward for pattern
-\vpattern - 'very magic' pattern: non-alphanumeric characters are interpreted as special regex symbols (no escaping needed)
-n - repeat search in same direction
-N - repeat search in opposite direction
-:%s/old/new/g - replace all old with new throughout file
-:%s/old/new/gc - replace all old with new throughout file with confirmations
-:noh - remove highlighting of search matches
+/pattern - search for pattern<br>
+?pattern - search backward for pattern<br>
+\vpattern - 'very magic' pattern: non-alphanumeric characters are interpreted as special regex symbols (no escaping needed)<br>
+n - repeat search in same direction<br>
+N - repeat search in opposite direction<br>
+:%s/old/new/g - replace all old with new throughout file<br>
+:%s/old/new/gc - replace all old with new throughout file with confirmations<br>
+:noh - remove highlighting of search matches<br>
 
 
-## Search in multiple files
-:vimgrep /pattern/ {file} - search for pattern in multiple files
-e.g. :vimgrep /foo/ **/*
-:cn - jump to the next match
-:cp - jump to the previous match
-:copen - open a window containing the list of matches
+## Search in multiple files<br>
+:vimgrep /pattern/ {file} - search for pattern in multiple files<br>
+e.g. :vimgrep /foo/ **/*<br>
+:cn - jump to the next match<br>
+:cp - jump to the previous match<br>
+:copen - open a window containing the list of matches<br>
 
 ## Working with multiple files<br>
 :e file - edit a file in a new buffer<br>
