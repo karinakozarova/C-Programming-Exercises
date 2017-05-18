@@ -21,5 +21,7 @@ void stack_destroy(struct stack_t* st){
 
 int main(){
 	struct stack_t st = stack_init(5);
-
+	st -> data = NULL;
+	st -> capacity = 0;
+	st -> top = -1;
 }
