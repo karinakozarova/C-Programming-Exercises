@@ -17,16 +17,18 @@ struct bug_fix_t events_per_month(struct calendar_t cal_t ){
 	struct bug_fix_t bug_fix; 
 	// grouped by month
 	for(;c<13;c++){	
+		sum = 0;
 		int d = 0;
 
 		
 		// find sum per each month
-		for(i = 0; i+d<=4+d; i++){
+		for(i += d; i+d<=4; i++){
 			sum += cal_t.events_count[i];	
 		}
 		d += 4;
 		
 		bug_fix.months[b] = sum;
+		b++;
 	}
 	
 	return bug_fix;
