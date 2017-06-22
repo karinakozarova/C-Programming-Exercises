@@ -38,3 +38,22 @@ https://docs.google.com/presentation/d/1Xb_V-ihyl5-2wiCSu-S3qB3q1XwjLkORs36wO1vb
 
 ## Pointers Practice (Practice VI)
 https://docs.google.com/presentation/d/1uENJjpBe6xP3WnVWpIKhHXIUMUGV8c2873HJij-PZ4c/edit?usp=sharing
+
+## Dynamic memory
+https://docs.google.com/presentation/d/1-8usV4tjQQYXb8HxFV8IsQMKYRn2ySfVEfYVxhoWVf4/edit#slide=id.p
+
+## Dynamic memory (Practice VII)
+https://docs.google.com/presentation/d/14DoqKDPazpLymUM18l533Q8U_47sx615KabiMeWrC8Q/edit#slide=id.p
+
+## Dynamic memory (Practice VIII)
+https://docs.google.com/presentation/d/16wP-WynvvG9Z3AmLJf3NJVfHRUnUp-x9-KarI0vnurk/edit#slide=id.p
+
+## Stack
+https://docs.google.com/presentation/d/1FTSzLEG911qRWQePUfjnkkG4SZjAD7eC_v_6_-mI01w/edit#slide=id.p
+
+## Linked list
+https://docs.google.com/presentation/d/1AleTtPjraJbZsfQK6R_zceTFxMcy-dzQQhkxThV1DIY/edit#slide=id.p
+
+## Data structures (Practive IX)
+https://docs.google.com/presentation/d/1DW9SVSw0075vUZGj7yx2hlwdK2IBV0r7myMi63t1YTs/edit#slide=id.p
+
