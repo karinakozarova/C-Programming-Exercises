@@ -1,4 +1,4 @@
-# All presentation resources from class should be added here
+# All presentation resources from class:
 
 ## GitHub
 https://drive.google.com/open?id=1MulVTJygrmsBQhJvKjtdx_oPwG4hMvRJJ2irtBQRyQM
