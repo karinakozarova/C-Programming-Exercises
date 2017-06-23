@@ -2,25 +2,34 @@
 struct person{
 	int age;
 	int gender; //1 - female, 0 - men(bcs women are always true(right)!!!)
+	int accepts_LGBT; // 1 - yes, 0 -no
 };
 
 void what_are_they(struct person person1,struct person person2);
 void should_we_date(struct person person1,struct person person2);
 void sexuality(struct person person1,struct person person2);
+int parade_or_not(struct person person);
+
 int main()
 {
 	struct person women;
 	struct person men;
-
+	//hard coded values for testing
 	women.age = 22;
 	men.age = 23;
-
+	
 	women.gender = 1;
 	men.gender = 0;
+
+	women.accepts_LGBT = 1;
+	men.accepts_LGBT = 0;
 
 	what_are_they(women, men);
 	should_we_date(women,men);
 	sexuality(women,men);
+	if(parade_or_not(men)==1) printf("Yessss\n");
+	else printf("Nooo\n");
+
 	return 0;
 }
 
@@ -82,4 +91,10 @@ void sexuality(struct person person1,struct person person2){
 			printf("Homo\n");
 		}
 	}
+}
+
+int parade_or_not(struct person person){
+	if(person.accepts_LGBT == 1) {
+		return 1; // should
+	}else return 0; // not really
 }
