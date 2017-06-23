@@ -1,0 +1,60 @@
+#include <stdio.h>
+struct person{
+	int age;
+	int gender; //1 - female, 0 - men(bcs women are always true(right)!!!)
+};
+
+void what_are_they(struct person person1,struct person person2);
+void should_we_date(struct person person1,struct person person2);
+
+int main()
+{
+	struct person women;
+	struct person men;
+
+	women.age = 22;
+	men.age = 23;
+
+	women.gender = 1;
+	men.gender = 0;
+
+	what_are_they(women, men);
+	should_we_date(women,men);
+
+	return 0;
+}
+
+void what_are_they(struct person person1,struct person person2){
+	//should print if they are both men, women, or man and women
+	int count_male = 0,count_female = 0;
+	
+	if(person1.gender==1) count_female++;
+	else count_male++;
+
+	if(person2.gender==1) count_female++;
+	else count_male++;	
+
+	if(count_male == 2) printf("Both are male\n");
+	else if(count_female == 2) printf("Both are female\n");
+	else printf("One is female, one is male\n");
+}
+
+void should_we_date(struct person person1,struct person person2){
+	if((person1.age<=18 && person2.age>=18)||(person1.age>=18 && person2.age<=18)){
+		//pedophiles
+		printf("Warning! Not a safe relationship. One is underage!\n");
+	} else if (person1.age<18 && person2.age<18){
+		printf("Both are underage.\n");
+	} else{
+		int age_difference = person1.age - person2.age;
+		if (age_difference<0){
+		 	age_difference *= -1; //make it possitive
+		} 
+		if (age_difference<11){
+			printf("This relationship is all right.\n");
+		}else{
+			printf("Warning, there is a big age difference.\n");
+		}
+
+	}
+}
