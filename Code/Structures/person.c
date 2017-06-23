@@ -9,6 +9,7 @@ void what_are_they(struct person person1,struct person person2);
 void should_we_date(struct person person1,struct person person2);
 void sexuality(struct person person1,struct person person2);
 int parade_or_not(struct person person);
+int make_the_num_positive(int num);
 
 int main()
 {
@@ -58,9 +59,8 @@ void should_we_date(struct person person1,struct person person2){
 	} else{
 		int age_difference = person1.age - person2.age;
 		
-		if (age_difference<0){
-		 	age_difference *= -1; //make it possitive
-		} 
+		make_the_num_positive(age_difference); //make it possitive
+		
 		if (age_difference<11){
 			printf("This relationship is all right.\n");
 		}else{
@@ -97,4 +97,10 @@ int parade_or_not(struct person person){
 	if(person.accepts_LGBT == 1) {
 		return 1; // should
 	}else return 0; // not really
+}
+
+int make_the_num_positive(int num){
+	if(num>0);
+	else num *= -1;
+	return num;
 }
