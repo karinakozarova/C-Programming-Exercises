@@ -6,7 +6,7 @@ struct person{
 
 void what_are_they(struct person person1,struct person person2);
 void should_we_date(struct person person1,struct person person2);
-
+void sexuality(struct person person1,struct person person2);
 int main()
 {
 	struct person women;
@@ -20,7 +20,7 @@ int main()
 
 	what_are_they(women, men);
 	should_we_date(women,men);
-
+	sexuality(women,men);
 	return 0;
 }
 
@@ -40,6 +40,7 @@ void what_are_they(struct person person1,struct person person2){
 }
 
 void should_we_date(struct person person1,struct person person2){
+	
 	if((person1.age<=18 && person2.age>=18)||(person1.age>=18 && person2.age<=18)){
 		//pedophiles
 		printf("Warning! Not a safe relationship. One is underage!\n");
@@ -47,6 +48,7 @@ void should_we_date(struct person person1,struct person person2){
 		printf("Both are underage.\n");
 	} else{
 		int age_difference = person1.age - person2.age;
+		
 		if (age_difference<0){
 		 	age_difference *= -1; //make it possitive
 		} 
@@ -56,5 +58,28 @@ void should_we_date(struct person person1,struct person person2){
 			printf("Warning, there is a big age difference.\n");
 		}
 
+	}
+}
+
+void sexuality(struct person person1,struct person person2){
+	if(person1.gender == 1){
+		
+		//person 1 - woman
+		if (person2.gender == 1){
+			//both are women
+			printf("Lesbians\n");
+		}else{
+			//one men,one women
+			printf("Homo\n");
+		}
+	}else{
+		//one is male
+		if (person2.gender == 0){
+			//both male
+			printf("Gays\n");
+		}else{
+			//one men,one women
+			printf("Homo\n");
+		}
 	}
 }
