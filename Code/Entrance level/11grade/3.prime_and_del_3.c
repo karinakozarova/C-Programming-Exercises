@@ -1,7 +1,8 @@
 #include <stdio.h>
 
 int isPrime(num){
-    for (int i = 2;i< num;i++) {
+    int i = 2;
+    for (;i< num;i++) {
         if(num % i == 0) return 0;
 
     }
@@ -15,9 +16,12 @@ int ends_in_3(num){
     else return 0;
 }
 int main(){
-    int x;
+    int x,y;
     scanf("%d",&x);
-    printf("%d\n",ends_in_3(x));
-    printf("%d",isPrime(x));
+    scanf("%d",&y);
+    while(x<=y){
+            if(isPrime(x)+ends_in_3(x)== 2) printf("%d\n",x);
+            x++;
+    }
     return 0;
 }
