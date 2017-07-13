@@ -1,12 +1,12 @@
 #include <stdio.h>
 
-int cut_one(int x,int y,int w,int h);
-int cut_two(int x,int y,int w,int h);
+int cut_one(int x,int y,int w,int h,int print);
+int cut_two(int x,int y,int w,int h,int print);
 
 int main(){
   // input
   int x = -1,y = -1,w = -1,h = -1;
-  /*do{
+  do{
     scanf("%d",&x);
   } while(x <= 0);
 
@@ -21,18 +21,23 @@ int main(){
   do{
     scanf("%d",&h);
   } while(h <= 0);
-  */
-  x = 3,y = 1,w = 2,h = 5;
+
 
   // show cutting cordinates
-  cut_one(x,y,w,h);
-  cut_two(x,y,w,h);
+  if (cut_one(x,y,w,h,0) > cut_two(x,y,w,h,0)){
+    cut_one(x,y,w,h,1); // prints and cordinates
+    printf("\nNumber of tiles: %d\n",cut_one(x,y,w,h,0)); // prints num of tiles
+  }
+else {
+  cut_two(x,y,w,h,1);
+    printf("\nNumber of tiles: %d\n",cut_two(x,y,w,h,0)); // prints num of tiles
 
+}
   return 0;
 }
 
 
-int cut_two(int x,int y,int w,int h){
+int cut_two(int x,int y,int w,int h,int print){
   int number_of_tiles = (w*h)/(x*y);
 
     int cutting_point = 0,count = 0;
@@ -63,23 +68,24 @@ int cut_two(int x,int y,int w,int h){
       cutting_cordinates_w_y[i] = cutting_point;
       counter++;
   }
-  printf("\nX cutting points: \n");
-  for (int i = 0; i < count; ++i)
-  {
-      printf("%d\n",cutting_cordinates_w_x[i]);
-  }
+  if(print){
+      printf("\nX cutting points: \n");
+      for (int i = 0; i < count; ++i)
+      {
+          printf("%d\n",cutting_cordinates_w_x[i]);
+      }
 
-    printf("\nY cutting points: \n");
-  for (int i = 0; i < counter; ++i)
-  {
-      printf("%d\n",cutting_cordinates_w_y[i]);
+        printf("\nY cutting points: \n");
+      for (int i = 0; i < counter; ++i)
+      {
+          printf("%d\n",cutting_cordinates_w_y[i]);
+      }
   }
    number_of_tiles = count*counter;
-  printf("\nNumber of tiles: %d\n",number_of_tiles);
   return number_of_tiles;
 }
 
-int cut_one(int x,int y,int w,int h){
+int cut_one(int x,int y,int w,int h,int print){
     // first way to cut them
   int number_of_tiles = (w*h)/(x*y);
 
@@ -110,20 +116,19 @@ int cut_one(int x,int y,int w,int h){
       cutting_cordinates_w_y[i] = cutting_point;
       counter++;
   }
+  if(print){
+        printf("\nX cutting points: \n");
+        for (int i = 0; i < count; ++i)
+        {
+            printf("%d\n",cutting_cordinates_w_x[i]);
+        }
 
-  printf("\nX cutting points: \n");
-  for (int i = 0; i < count; ++i)
-  {
-      printf("%d\n",cutting_cordinates_w_x[i]);
+        printf("\nY cutting points: \n");
+        for (int i = 0; i < counter; ++i)
+        {
+            printf("%d\n",cutting_cordinates_w_y[i]);
+        }
   }
-
-  printf("\nY cutting points: \n");
-  for (int i = 0; i < counter; ++i)
-  {
-      printf("%d\n",cutting_cordinates_w_y[i]);
-  }
-
   number_of_tiles = count*counter;
-  printf("\nNumber of tiles: %d\n",number_of_tiles);
   return number_of_tiles;
 }
