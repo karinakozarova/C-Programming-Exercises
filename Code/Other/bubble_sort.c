@@ -1,31 +1,27 @@
 #include <stdio.h>
 
+#define DIM 5
+
 int main() {
-    int count = 0;
-    int arr[5];
-    arr[0] = 3;
+    
+    int arr[DIM];
+    arr[0] = 1;
     arr[1] = 2;
-    arr[2] = 1;
+    arr[2] = 3;
     arr[3] = 4;
     arr[4] = 5;
 
-    // descending order
-    do{
-        count = 0;
-        for (int i = 0; i < 5 ; i++) {
-            if(arr[i+1] > arr[i]){
-                int c = arr[i+1];
-                arr[i+1] = arr[i];
-                arr[i] = c;
-                count++;
-            }
+    for(int i = 0; i < DIM - 1; i++) {
+        for(int g = i + 1; g < DIM; g++) {
+            int temp = arr[i];
+            arr[i] = arr[g];
+            arr[g] = temp;
         }
-    } while(count != 0);
+    }
 
-    for (int i = 0; i < 5; ++i) {
-     printf("%d\n",arr[i]);
+    for (int i = 0; i < DIM; i++) {
+        printf("%d\n", arr[i]);
     }
 
     return 0;
-
 }
